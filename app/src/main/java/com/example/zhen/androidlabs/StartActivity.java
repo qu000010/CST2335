@@ -26,15 +26,22 @@ public class StartActivity extends AppCompatActivity {
                 startActivityForResult(ListItemsActivity, 5);
             }
         });
+
+        Button btChat = (Button) findViewById(R.id.button2);
+        btChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent chatWindow = new Intent(StartActivity.this, ChatWindow.class);
+                startActivity(chatWindow);
+                Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+            }
+        });
+
         Log.i(ACTIVITY_NAME, "In onCreate()");
     }
 
     public void onActivityResult(int requestCode,int responseCode, Intent data){
-        if( requestCode == 5){
-            Log.i(ACTIVITY_NAME, "Returned to StartActivity.onActivityResult");
-        }
-
-        if(responseCode== Activity.RESULT_OK) {
+        if(( requestCode == 5)&&(responseCode== Activity.RESULT_OK)) {
             String messagePassed = data.getStringExtra("Response");
             Toast toast = Toast.makeText(this , messagePassed, Toast.LENGTH_LONG);
             toast.show(); //display your message box
