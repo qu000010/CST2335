@@ -16,4 +16,5 @@
     <string name="cancel">取消</string>
     <string name="chatButton">开始聊天</string>
     <string name="sendButton">发送</string>
+    <string name="checkWeatherButton">天气</string>
 </resources>
