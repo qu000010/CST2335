@@ -47,7 +47,7 @@ public class WeatherForecast extends AppCompatActivity {
         protected String doInBackground(String ... args){
             String in="";
            try{
-               URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q=xiamen,cn&APPID=d99666875e0e51521f0040a3d97d0f6a&mode=xml&units=metric");
+               URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q=ottawa,ca&APPID=d99666875e0e51521f0040a3d97d0f6a&mode=xml&units=metric");
                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                InputStream inStream = conn.getInputStream();
 
