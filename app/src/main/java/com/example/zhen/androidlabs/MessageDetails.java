@@ -1,8 +1,6 @@
 package com.example.zhen.androidlabs;
 
 import android.support.v7.app.AppCompatActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 
 public class MessageDetails extends AppCompatActivity {

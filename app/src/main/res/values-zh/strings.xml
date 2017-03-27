@@ -17,4 +17,9 @@
     <string name="chatButton">开始聊天</string>
     <string name="sendButton">发送</string>
     <string name="checkWeatherButton">天气</string>
+    <string name="deleteMessageButton">删除选中的消息</string>
+    <string name="deleteMessageID">删除消息编号</string>
+    <string name="deleteMessageInfo">删除消息内容</string>
+    <string name="gotoTestToolbar">测试工具栏</string>
+    <string name="messageInput">输入信息</string>
 </resources>

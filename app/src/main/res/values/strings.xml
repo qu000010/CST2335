@@ -17,4 +17,10 @@
     <string name="chatButton">Start Chat</string>
     <string name="sendButton">Send</string>
     <string name="checkWeatherButton">Weather</string>
+    <string name="deleteMessageButton">Delete this message</string>
+    <string name="deleteMessageID">ID=</string>
+    <string name="deleteMessageInfo">MessageHere</string>
+    <string name="gotoTestToolbar">Test Toolbar</string>
+    <string name="messageInput">Enter Text</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
 </resources>

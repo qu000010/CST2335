@@ -35,11 +35,20 @@
         android:id="@+id/button2" />
 
     <Button
+        android:text="@string/gotoTestToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/testToolbarButton"
+        android:layout_above="@+id/weatherButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
         android:text="@string/checkWeatherButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
-        android:layout_alignStart="@+id/button2"
         android:layout_marginTop="35dp"
-        android:id="@+id/weatherButton" />
+        android:id="@+id/weatherButton"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -6,9 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,10 +18,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
-import static android.os.Build.VERSION_CODES.M;
 
 public class ChatWindow extends AppCompatActivity {
     ListView chatListView;
@@ -119,16 +114,20 @@ public class ChatWindow extends AppCompatActivity {
         public ChatAdapter (Context ctx){
             super(ctx,0);
         }
+
         public int getCount(){
             return chatMessage.size();
         }
+
         public long getItemId(int position) {
            results.moveToPosition(position);
            return results.getLong( results.getColumnIndex(ChatDatabaseHelper.KEY_ID) );
         }
+
         public String getItem(int position){
             return chatMessage.get(position);
         }
+
         public View getView(int position, View convertView, ViewGroup parent){
             LayoutInflater inflater = ChatWindow.this.getLayoutInflater();
             View result = null ;
